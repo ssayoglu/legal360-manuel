@@ -1,0 +1,670 @@
+[{
+	"_id": {
+		"$oid": "68bdaf6440d2c7252d98e68e"
+	},
+	"id": "bosanma-sureci",
+	"title": "Boşanma Süreci",
+	"description": "Boşanma davası ve arabuluculuk süreçleri",
+	"icon": "💔",
+	"color": "#3B82F6",
+	"gradient": "from-blue-400 to-blue-600",
+	"duration": "6-12 ay",
+	"difficulty": "Orta",
+	"total_steps": 6,
+	"has_calculator": false,
+	"calculator_type": "",
+	"category": "hukuk",
+	"tags": [
+		"boşanma",
+		"aile hukuku",
+		"arabuluculuk",
+		"mahkeme"
+	],
+	"estimated_costs": {
+		"title": "Boşanma Davası Tahmini Masrafları",
+		"items": [
+			{
+				"name": "Avukat Ücreti",
+				"min": 5000,
+				"max": 25000,
+				"note": "Anlaşmalı daha ucuz, çekişmeli daha pahalı"
+			},
+			{
+				"name": "Dava Harcı",
+				"min": 150,
+				"max": 500,
+				"note": "Davaya konu mal varlığına göre değişir"
+			},
+			{
+				"name": "Arabuluculuk Ücreti",
+				"min": 0,
+				"max": 2000,
+				"note": "Zorunlu değil, ama önerilir"
+			},
+			{
+				"name": "Noter Masrafları",
+				"min": 200,
+				"max": 1000,
+				"note": "Anlaşma protokolü için"
+			},
+			{
+				"name": "Keşif/Bilirkişi",
+				"min": 0,
+				"max": 5000,
+				"note": "Mal paylaşımı varsa gerekebilir"
+			},
+			{
+				"name": "Temyiz Masrafları",
+				"min": 0,
+				"max": 3000,
+				"note": "Karara itiraz edilirse"
+			}
+		],
+		"total_range": "5.350 - 36.500 TL",
+		"free_options": [
+			"Adli yardımdan yararlanabilirsiniz (gelir şartı var)",
+			"Anlaşmalı boşanmada tek avukat yeterli",
+			"Bazı barolar ücretsiz danışmanlık verir"
+		]
+	},
+	"steps": [
+		{
+			"id": "step1",
+			"title": "Hukuki Danışmanlık",
+			"short_title": "Danışmanlık",
+			"description": "Bir avukatla görüşerek boşanma sürecinin detayları hakkında bilgi alın. Haklarınızı ve yükümlülüklerinizi öğrenin.",
+			"duration": "1-2 saat",
+			"participants": [
+				"Avukat",
+				"Danışan"
+			],
+			"required_documents": [
+				{
+					"name": "Kimlik belgesi",
+					"description": "Nüfus cüzdanı veya T.C. kimlik kartı"
+				},
+				{
+					"name": "Evlilik cüzdanı",
+					"description": "Resmi nikah belgesi"
+				},
+				{
+					"name": "Gelir belgesi",
+					"description": "Maaş bordrosu veya gelir beyannamesi"
+				}
+			],
+			"important_notes": [
+				"Boşanma sebeplerini belirleyin",
+				"Mal paylaşımı konularını değerlendirin",
+				"Çocuk velayeti durumunu görüşün"
+			],
+			"position": {
+				"x": 50,
+				"y": 50
+			},
+			"connections": [
+				"step2"
+			],
+			"status": "active"
+		},
+		{
+			"id": "step2",
+			"title": "Arabuluculuk",
+			"short_title": "Arabuluculuk",
+			"description": "Mahkeme öncesi arabuluculuk sürecini deneyin. Arabulucu, tarafsız bir üçüncü kişi olarak anlaşmanızı sağlamaya çalışır.",
+			"duration": "2-4 hafta",
+			"participants": [
+				"Arabulucu",
+				"Eşler",
+				"Avukatlar"
+			],
+			"required_documents": [
+				{
+					"name": "Arabuluculuk başvuru formu",
+					"description": "Resmi başvuru belgesi"
+				},
+				{
+					"name": "Kimlik belgesi",
+					"description": "Her iki eş için kimlik belgesi"
+				},
+				{
+					"name": "Evlilik cüzdanı",
+					"description": "Orijinal evlilik belgesi"
+				}
+			],
+			"important_notes": [
+				"Zorunlu değil ancak önerilir",
+				"Daha hızlı ve ekonomik çözüm",
+				"Gizlilik esasına dayanır"
+			],
+			"position": {
+				"x": 250,
+				"y": 50
+			},
+			"connections": [
+				"step3",
+				"step4"
+			],
+			"status": "upcoming"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "68bdaf6440d2c7252d98e68f"
+	},
+	"id": "is-davasi-sureci",
+	"title": "İş Davası Süreci",
+	"description": "İşçi hakları ve iş mahkemesi süreçleri",
+	"icon": "💼",
+	"color": "#F97316",
+	"gradient": "from-orange-400 to-orange-600",
+	"duration": "6-12 ay",
+	"difficulty": "Orta",
+	"total_steps": 5,
+	"has_calculator": true,
+	"calculator_type": "compensation",
+	"category": "hukuk",
+	"tags": [
+		"işçi hakları",
+		"tazminat",
+		"iş kanunu",
+		"mahkeme"
+	],
+	"estimated_costs": {
+		"title": "İş Davası Tahmini Masrafları",
+		"items": [
+			{
+				"name": "Avukat Ücreti",
+				"min": 0,
+				"max": 10000,
+				"note": "İş mahkemelerinde vekalet ücreti muafiyeti var"
+			},
+			{
+				"name": "Dava Harcı",
+				"min": 0,
+				"max": 0,
+				"note": "İş davalarında harç muafiyeti"
+			},
+			{
+				"name": "Arabuluculuk",
+				"min": 0,
+				"max": 0,
+				"note": "Zorunlu ve ücretsiz"
+			},
+			{
+				"name": "İcra Masrafları",
+				"min": 50,
+				"max": 500,
+				"note": "İcra takibinde masraflar"
+			},
+			{
+				"name": "Ekspertiz Ücreti",
+				"min": 0,
+				"max": 2000,
+				"note": "Bilirkişi gerekirse"
+			},
+			{
+				"name": "Temyiz Masrafları",
+				"min": 0,
+				"max": 1000,
+				"note": "Yargıtay başvurusu"
+			}
+		],
+		"total_range": "50 - 13.500 TL",
+		"free_options": [
+			"İş davalarında harç muafiyeti var",
+			"Arabuluculuk zorunlu ve ücretsiz",
+			"Bazı avukatlar başarı ücreti alır",
+			"Adli yardımdan yararlanabilirsiniz"
+		]
+	},
+	"steps": [
+		{
+			"id": "step1",
+			"title": "İş Sona Erme",
+			"short_title": "İşten Çıkış",
+			"description": "İş sözleşmesinin sona ermesi ve alacakların hesaplanması",
+			"duration": "1 hafta",
+			"participants": [
+				"İşçi",
+				"İşveren",
+				"İK Departmanı"
+			],
+			"required_documents": [
+				{
+					"name": "İş sözleşmesi",
+					"description": "Yazılı iş sözleşmesi belgesi"
+				},
+				{
+					"name": "Bordro örnekleri",
+					"description": "Son 12 ayın maaş bordroları"
+				},
+				{
+					"name": "İşten çıkış belgesi",
+					"description": "İşveren tarafından verilen resmi belge"
+				}
+			],
+			"important_notes": [
+				"Tüm belgelerinizi saklayın",
+				"Alacaklarınızı hesaplayın",
+				"Fesih gerekçesini öğrenin"
+			],
+			"position": {
+				"x": 50,
+				"y": 50
+			},
+			"connections": [
+				"step2"
+			],
+			"status": "active"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "68bdaf6440d2c7252d98e690"
+	},
+	"id": "ceza-yargisi-sureci",
+	"title": "Ceza Yargılaması Süreci",
+	"description": "Ceza davası süreci ve haklarınız",
+	"icon": "⚖️",
+	"color": "#DC2626",
+	"gradient": "from-red-400 to-red-600",
+	"duration": "6-18 ay",
+	"difficulty": "Zor",
+	"total_steps": 7,
+	"has_calculator": true,
+	"calculator_type": "execution",
+	"category": "ceza",
+	"tags": [
+		"ceza hukuku",
+		"mahkeme",
+		"savunma",
+		"hak arama"
+	],
+	"estimated_costs": {
+		"title": "Ceza Davası Tahmini Masrafları",
+		"items": [
+			{
+				"name": "Avukat Ücreti",
+				"min": 3000,
+				"max": 50000,
+				"note": "Suçun ağırlığına göre değişir"
+			},
+			{
+				"name": "Dava Harcı",
+				"min": 0,
+				"max": 500,
+				"note": "Davacı tarafından ödenir"
+			},
+			{
+				"name": "Bilirkişi Ücreti",
+				"min": 0,
+				"max": 5000,
+				"note": "Gerektiğinde"
+			},
+			{
+				"name": "Temyiz Masrafları",
+				"min": 0,
+				"max": 2000,
+				"note": "Yargıtay başvurusu"
+			},
+			{
+				"name": "Tanık Masrafları",
+				"min": 0,
+				"max": 1000,
+				"note": "Şehir dışından gelecekse"
+			}
+		],
+		"total_range": "3.000 - 58.500 TL",
+		"free_options": [
+			"Adli yardımdan yararlanabilirsiniz",
+			"Baro avukatı tayin edilebilir",
+			"Kamu davalarında harç yoktur"
+		]
+	},
+	"steps": [
+		{
+			"id": "step1",
+			"title": "Suç İhbarı",
+			"short_title": "İhbar",
+			"description": "Suç ihbarı veya şikayetin yapılması",
+			"duration": "1 gün",
+			"participants": [
+				"Mağdur",
+				"Polis",
+				"Savcılık"
+			],
+			"required_documents": [
+				{
+					"name": "Kimlik belgesi",
+					"description": "T.C. kimlik kartı veya nüfus cüzdanı"
+				},
+				{
+					"name": "Şikayet dilekçesi",
+					"description": "Detaylı şikayet yazısı"
+				},
+				{
+					"name": "Delil belgeleri",
+					"description": "Suçla ilgili tüm belgeler"
+				}
+			],
+			"important_notes": [
+				"Tüm delilleri saklayın",
+				"Detaylı şikayet yazın",
+				"Tanık bilgilerini verin"
+			],
+			"position": {
+				"x": 50,
+				"y": 50
+			},
+			"connections": [
+				"step2"
+			],
+			"status": "active"
+		},
+		{
+			"id": "step2",
+			"title": "Soruşturma",
+			"short_title": "Soruşturma",
+			"description": "Cumhuriyet Savcılığı tarafından soruşturma",
+			"duration": "6 ay",
+			"participants": [
+				"Savcı",
+				"Polis",
+				"Şüpheli",
+				"Mağdur"
+			],
+			"required_documents": [
+				{
+					"name": "İfade tutanakları",
+					"description": "Savcılıkta verilen ifadeler"
+				},
+				{
+					"name": "Delil toplama",
+					"description": "Toplanan delil belgeleri"
+				},
+				{
+					"name": "Bilirkişi raporları",
+					"description": "Teknik konularda bilirkişi raporları"
+				}
+			],
+			"important_notes": [
+				"Gizli soruşturmadır",
+				"Avukat hakkınız vardır",
+				"İfade verme zorunluluğu yok"
+			],
+			"position": {
+				"x": 250,
+				"y": 50
+			},
+			"connections": [
+				"step3",
+				"step4"
+			],
+			"status": "upcoming"
+		},
+		{
+			"id": "step3",
+			"title": "İddianame",
+			"short_title": "İddianame",
+			"description": "Savcının iddianame düzenlemesi",
+			"duration": "2-4 hafta",
+			"participants": [
+				"Savcı",
+				"Mahkeme"
+			],
+			"required_documents": [
+				{
+					"name": "İddianame",
+					"description": "Savcının iddianame metni"
+				},
+				{
+					"name": "Soruşturma dosyası",
+					"description": "Tüm soruşturma belgeleri"
+				},
+				{
+					"name": "Delil listesi",
+					"description": "Sunulacak delillerin listesi"
+				}
+			],
+			"important_notes": [
+				"Suçlama kesinleşir",
+				"Mahkeme süreci başlar",
+				"Müdafi seçme hakkı"
+			],
+			"position": {
+				"x": 150,
+				"y": 200
+			},
+			"connections": [
+				"step5"
+			],
+			"status": "upcoming"
+		},
+		{
+			"id": "step4",
+			"title": "Kovuşturmama",
+			"short_title": "Kovuşturmama",
+			"description": "Yeterli delil yoksa kovuşturmama kararı",
+			"duration": "2 hafta",
+			"participants": [
+				"Savcı",
+				"Mağdur"
+			],
+			"required_documents": [
+				{
+					"name": "Kovuşturmama kararı",
+					"description": "Savcının kovuşturmama kararı"
+				},
+				{
+					"name": "İtiraz dilekçesi",
+					"description": "Karara itiraz dilekçesi (varsa)"
+				}
+			],
+			"important_notes": [
+				"Karara itiraz edilebilir",
+				"Başka savcı inceler",
+				"Yeni delil sunulabilir"
+			],
+			"position": {
+				"x": 450,
+				"y": 200
+			},
+			"connections": [],
+			"status": "upcoming"
+		},
+		{
+			"id": "step5",
+			"title": "Mahkeme Süreci",
+			"short_title": "Duruşma",
+			"description": "Mahkemede aleni duruşma yapılması",
+			"duration": "6-12 ay",
+			"participants": [
+				"Hakim",
+				"Sanık",
+				"Müşteki",
+				"Avukatlar"
+			],
+			"required_documents": [
+				{
+					"name": "Duruşma tutanakları",
+					"description": "Tüm duruşma tutanakları"
+				},
+				{
+					"name": "Delil sunumu",
+					"description": "Sunulan delil belgeleri"
+				},
+				{
+					"name": "Tanık ifadeleri",
+					"description": "Tanık ifade tutanakları"
+				}
+			],
+			"important_notes": [
+				"Aleni duruşmadır",
+				"Susma hakkınız vardır",
+				"Müdafi bulundurabilirsiniz"
+			],
+			"position": {
+				"x": 150,
+				"y": 350
+			},
+			"connections": [
+				"step6",
+				"step7"
+			],
+			"status": "upcoming"
+		},
+		{
+			"id": "step6",
+			"title": "Beraat Kararı",
+			"short_title": "Beraat",
+			"description": "Suçun sabit olmaması durumunda beraat",
+			"duration": "2 hafta",
+			"participants": [
+				"Mahkeme",
+				"Sanık"
+			],
+			"required_documents": [
+				{
+					"name": "Beraat kararı",
+					"description": "Mahkemenin beraat kararı"
+				},
+				{
+					"name": "Temyiz dilekçesi",
+					"description": "Karara temyiz dilekçesi (varsa)"
+				}
+			],
+			"important_notes": [
+				"Sanık aklanmış olur",
+				"Savcı temyiz edebilir",
+				"Kişilik hakları korunur"
+			],
+			"position": {
+				"x": 50,
+				"y": 500
+			},
+			"connections": [],
+			"status": "upcoming"
+		},
+		{
+			"id": "step7",
+			"title": "Mahkumiyet",
+			"short_title": "Mahkumiyet",
+			"description": "Suçun sabit olması durumunda ceza verilmesi",
+			"duration": "1 ay",
+			"participants": [
+				"Mahkeme",
+				"Sanık",
+				"İnfaz Kurumu"
+			],
+			"required_documents": [
+				{
+					"name": "Mahkumiyet kararı",
+					"description": "Mahkemenin mahkumiyet kararı"
+				},
+				{
+					"name": "Temyiz dilekçesi",
+					"description": "Karara temyiz dilekçesi (varsa)"
+				},
+				{
+					"name": "İnfaz belgesi",
+					"description": "Ceza infaz belgesi"
+				}
+			],
+			"important_notes": [
+				"Temyiz edilebilir",
+				"Ceza türü belirlenir",
+				"İnfaz süreci başlar"
+			],
+			"position": {
+				"x": 250,
+				"y": 500
+			},
+			"connections": [],
+			"status": "upcoming"
+		}
+	],
+	"updated_at": {
+		"$date": "2025-09-07T22:07:05.889Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "68bdd8cb9a142d2e4a1e3ead"
+	},
+	"id": "9269f601-8853-46a6-af2f-46b27d7851a7",
+	"created_at": {
+		"$date": "2025-09-07T22:11:07.435Z"
+	},
+	"updated_at": {
+		"$date": "2025-09-07T23:22:58.24Z"
+	},
+	"title": "aaaa",
+	"description": "aaaa",
+	"icon": "⚖️",
+	"color": "#3B82F6",
+	"gradient": "from-blue-500 to-blue-600",
+	"duration": "",
+	"difficulty": "Orta",
+	"total_steps": 1,
+	"has_calculator": true,
+	"category": "hukuk",
+	"tags": [
+		"aaa"
+	],
+	"estimated_costs": {
+		"title": "aaa",
+		"items": [
+			{
+				"name": "aaa",
+				"min": 100,
+				"max": 22000,
+				"note": "test"
+			}
+		],
+		"total_range": "4000-10000",
+		"free_options": [
+			"aaaa",
+			"bbbb",
+			"cccc"
+		]
+	},
+	"steps": [
+		{
+			"id": "step1",
+			"title": "aaaa",
+			"short_title": "aaa ",
+			"description": "aaaaaabbbb",
+			"duration": "1-2 saat",
+			"participants": [
+				"aa",
+				"bb",
+				"cc"
+			],
+			"required_documents": [
+				{
+					"name": "kimlik",
+					"description": "aaa"
+				},
+				{
+					"name": "aaaa",
+					"description": "aaaa hakkında detaylı bilgi"
+				}
+			],
+			"important_notes": [
+				"b",
+				"c",
+				"d"
+			],
+			"position": {
+				"x": 0,
+				"y": 0
+			},
+			"connections": [],
+			"status": "upcoming"
+		}
+	],
+	"calculator_type": "execution"
+}]
+

@@ -1,0 +1,130 @@
+[{
+	"_id": {
+		"$oid": "68bdaf6440d2c7252d98e69e"
+	},
+	"title": "Ücretsiz Adli Yardım Hizmetleri",
+	"description": "Maddi durumu yetersiz olan vatandaşlarımızın hukuki sorunlarında ücretsiz destek alabileceği resmi hizmetler.",
+	"sections": [
+		{
+			"title": "Adli Yardım Nedir?",
+			"icon": "Scale",
+			"content": "Devlet tarafından maddi durumu yetersiz vatandaşlara sağlanan ücretsiz hukuki yardım hizmetidir. Avukat ücreti, harç, tebligat ve diğer giderler devlet tarafından karşılanır.",
+			"color": "bg-gray-100"
+		},
+		{
+			"title": "Kimler Yararlanabilir?",
+			"icon": "Users",
+			"content": "Aylık geliri asgari ücretin iki katından az olan, sosyal güvenlik primi veya vergi mükellefi olmayan vatandaşlar adli yardımdan yararlanabilir.",
+			"color": "bg-gray-100"
+		},
+		{
+			"title": "Nasıl Başvurulur?",
+			"icon": "FileText",
+			"content": "Adli yardım büroları, baroların hukuk işleri müdürlükleri veya online başvuru sistemi üzerinden başvuru yapılabilir. Gelir belgesi ve kimlik belgesi gereklidir.",
+			"color": "bg-gray-100"
+		},
+		{
+			"title": "Ücretsiz Hukuki Danışmanlık",
+			"icon": "MessageCircle",
+			"content": "Barolar ücretsiz hukuki danışmanlık hizmeti verir. ALO 175 hattından da ücretsiz hukuki bilgi alınabilir.",
+			"color": "bg-gray-100"
+		}
+	],
+	"helplines": [
+		{
+			"name": "Sosyal Destek Hattı",
+			"description": "Şiddetle Mücadele Hattı",
+			"phone": "183",
+			"hours": "7/24"
+		},
+		{
+			"name": "Tüketici Danışma Hattı",
+			"description": "Ticaret Bak. Tüketici Danışma Hattı",
+			"phone": "175",
+			"hours": "7/24"
+		},
+		{
+			"name": "Acil Çağrı Merkezi",
+			"description": "Polis, Ambulans, İtfaiye vs. ",
+			"phone": "112",
+			"hours": "7/24"
+		}
+	],
+	"baro_contacts": [
+		{
+			"city": "İstanbul",
+			"name": "İstanbul Barosu",
+			"phone": "0212 251 66 00",
+			"address": "Cağaloğlu, İstanbul",
+			"website": "www.istanbulbarosu.org.tr"
+		},
+		{
+			"city": "Mersin",
+			"name": "Mersin Barosu",
+			"phone": "555 555 55 55",
+			"address": "Akdeniz, Mersin",
+			"website": "mersinbarosu.org.tr"
+		},
+		{
+			"city": "Ankara",
+			"name": "Ankara Barosu",
+			"phone": "0312 311 20 00",
+			"address": "Kızılay, Ankara",
+			"website": "www.ankarabarosu.org.tr"
+		},
+		{
+			"city": "İzmir",
+			"name": "İzmir Barosu",
+			"phone": "0232 441 77 00",
+			"address": "Konak, İzmir",
+			"website": "www.izmirbarosu.org.tr"
+		},
+		{
+			"city": "Adana",
+			"name": "Adana Barosu",
+			"phone": "0 (322) 359 22 24",
+			"address": "Kazım Karabekir, 4264. Sk. No:30, 01230 H Blok 1. Kat Yüreğir",
+			"website": "www.adanabarosu.org.tr"
+		},
+		{
+			"city": "Adıyaman",
+			"name": "Adıyaman Barosu",
+			"phone": "0 (416) 216 13 51",
+			"address": "Turgut Reis Mahallesi Atatürk Bulvarı Adliye Sarayı Kat : 2",
+			"website": "https://www.adiyamanbarosu.org.tr/"
+		},
+		{
+			"city": "Afyonkarahisar",
+			"name": "Afyon Barosu",
+			"phone": "0 (272) 217 62 42",
+			"address": "Kocatepe Mahallesi 561. Sokak No:5 Merkez",
+			"website": "https://www.afyonbaro.org.tr"
+		}
+	],
+	"eligibility_criteria": "Gelir durumu belirli sınırların altında olan, maddi durumu yetersiz olan tüm vatandaşlar.",
+	"application_process": "1. En yakın baroya giderek başvuru formu doldurun\n2. Gelir belgesi ve kimlik belgesi ile birlikte başvuru yapın\n3. Baro tarafından değerlendirilir\n4. Uygun görülürse avukat atanır",
+	"required_documents": [
+		"Kimlik Kartı"
+	],
+	"contact_info": {
+		"phone": "175",
+		"email": "adliyardim@adalet.gov.tr",
+		"address": "Adalet Bakanlığı, Ankara",
+		"working_hours": "09:00-17:00 (Pazartesi-Cuma)"
+	},
+	"is_active": true,
+	"created_at": {
+		"$date": "2025-09-07T19:15:01.316Z"
+	},
+	"id": "68bdaf6440d2c7252d98e69e",
+	"updated_at": {
+		"$date": "2025-09-08T21:47:29.037Z"
+	},
+	"important_notes": [
+		"Adli yardım başvurusu yapmadan önce gelir durumunuzu belgeleyin",
+		"Acil durumlarda 175'i arayarak hemen bilgi alabilirsiniz",
+		"Barolar genellikle hafta içi 09:00-17:00 saatleri arasında hizmet verir",
+		"Adli yardım almak için vatandaşlık şartı yoktur, ikamet yeterlidir"
+	]
+}]
+

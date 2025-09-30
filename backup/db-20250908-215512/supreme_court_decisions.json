@@ -1,0 +1,72 @@
+[{
+	"_id": {
+		"$oid": "68bdd5459a142d2e4a1e3eac"
+	},
+	"id": "0d455c17-f8b0-461a-b2fe-8ea417d03382",
+	"created_at": {
+		"$date": "2025-09-07T21:56:05.734Z"
+	},
+	"updated_at": {
+		"$date": "2025-09-08T12:59:10.461Z"
+	},
+	"title": "Boşanma Davasında Mal Paylaşımı - Yargıtay 2. HD. ",
+	"decision_number": "2025/1932",
+	"date": "2025-01-01",
+	"court": "2. Hukuk Dairesi",
+	"summary": "Eşler arasında mal rejimi sözleşmesi baulunmadığı durumda, evlilik süresince edinilen malların paylaşımı konusunda Yargıtay'ın görüşü...",
+	"full_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor turpis sed lacus gravida, et maximus elit aliquam. Proin at odio nunc. In hac habitasse platea dictumst. In hac habitasse platea dictumst. Integer quis consequat nisl, eget eleifend odio. Cras vel nisi dui. Praesent vitae odio id tellus consequat tristique quis viverra lorem. Fusce vitae nunc aliquam, mattis leo ac, viverra lectus. Quisque at nulla elementum, pharetra augue eu, vulputate magna.\n\nSuspendisse ac accumsan sapien. Duis porttitor venenatis hendrerit. In ut orci elementum neque posuere convallis. Donec imperdiet augue diam, at porttitor turpis dapibus id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas eleifend arcu egestas, feugiat diam vel, venenatis ex. Sed dapibus dolor non nisl consectetur mollis. Proin ut neque vestibulum nunc blandit aliquet. Suspendisse tempus ornare eros, at accumsan quam finibus ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nProin nec elit eget odio tincidunt fringilla. Proin tortor turpis, convallis ac facilisis sit amet, ullamcorper quis purus. Donec risus justo, consectetur at commodo ac, semper ac eros. Praesent in massa at ante feugiat dapibus in sed lacus. Nullam et arcu blandit, luctus diam non, eleifend nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer consectetur mi lorem, eget porta sapien lobortis eu. Ut scelerisque et lorem non porta. Quisque at enim sapien.\n\nDonec finibus semper lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam hendrerit et orci id interdum. In dictum neque a nisi condimentum, at viverra enim pulvinar. Vivamus commodo eros quis urna scelerisque, id tincidunt elit gravida. Vivamus velit orci, egestas non ornare at, lobortis quis tellus. Aliquam vel leo ligula. Vivamus quis risus quis odio venenatis suscipit id sit amet neque. Donec quis cursus justo, ut consectetur dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ex ligula, eleifend vel bibendum vitae, dignissim quis quam. Aliquam neque elit, rutrum nec bibendum non, interdum vel sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris ac metus eleifend, interdum sapien pellentesque, congue mi. Sed turpis ex, luctus et neque id, lobortis aliquam magna. Fusce nec vulputate dolor, ac maximus dolor.\n\nNunc ultricies diam a nibh luctus, quis faucibus lorem vulputate. Curabitur eleifend ut velit in consectetur. Nulla eu ante in tellus sollicitudin gravida. Sed a velit nisi. Cras tincidunt urna vitae purus pulvinar viverra. Curabitur laoreet dapibus fringilla. Nullam aliquet, libero vel placerat convallis, tellus nisl posuere mauris, ut malesuada urna arcu non justo. Vivamus quis libero in leo tincidunt pulvinar ac mollis neque. Cras ornare risus non ipsum lacinia tempus. Nunc lorem enim, malesuada in lorem in, efficitur convallis sem.",
+	"category": "civil",
+	"keywords": [],
+	"importance_level": "high"
+},
+{
+	"_id": {
+		"$oid": "68bea7dbe08d28b104601f45"
+	},
+	"id": "c3e7f12c-c0c5-4906-a35b-751f2183747f",
+	"created_at": {
+		"$date": "2025-09-08T12:54:35.08Z"
+	},
+	"updated_at": {
+		"$date": "2025-09-08T13:05:37.59Z"
+	},
+	"title": "test",
+	"decision_number": "2022/255 E. 522/566 K.",
+	"date": "2025-01-01",
+	"court": "12. Ceza Dairesi",
+	"summary": "karar özeti",
+	"full_text": "karar metni",
+	"category": "civil",
+	"keywords": [],
+	"importance_level": "medium",
+	"is_published": true,
+	"published_at": {
+		"$date": "2025-09-08T13:05:37.59Z"
+	}
+},
+{
+	"_id": {
+		"$oid": "68beb897526218e2ff99c464"
+	},
+	"id": "23d7db37-8077-4885-8f6c-21f0a48d7703",
+	"created_at": {
+		"$date": "2025-09-08T14:05:59.466Z"
+	},
+	"updated_at": {
+		"$date": "2025-09-08T14:05:59.466Z"
+	},
+	"title": "T.C. Yargıtay Başkanlığı - 12. Ceza Dairesi",
+	"decision_number": "E. 2020/8597 K. 2021/476",
+	"date": "",
+	"court": "12. Ceza Dairesi",
+	"summary": "kanun yararına bozma • taksirle yaralama • yaralama",
+	"full_text": "Mahkemesi: Sulh Ceza Mahkemesi\n\nTaksirle yaralama suçundan şüpheli Alper Bağatır hakkında yapılan soruşturma evresi sonunda, Cumhuriyet Başsavcılığınca verilen 15/01/2020 tarihli ve 2019/191 soruşturma, 2020/109 sayılı kovuşturmaya yer olmadığına dair karara karşı yapılan itirazın reddine ilişkin Bolvadin Sulh Ceza Hâkimliğinin 12/02/2020 tarihli ve 2020/149 değişik iş sayılı kararını kapsayan dosya incelendi.\n\nDosya kapsamına göre; müştekinin, trafik kazasının meydana gelmesinde sorumluluğu tespit edilen yol yapım şirketi hakkında şikâyetçi olması üzerine ... Cumhuriyet Başsavcılığınca, suça konu eylemin 25/10/2017 tarihinde gerçekleştiği, şüpheliye yüklenen taksirle yaralamaya sebep olma eyleminin takibinin şikâyete bağlı olduğu, şikâyetin ise 5237 sayılı Türk Ceza Kanunu’nun 73/1. maddesinde düzenlenen 6 aylık hak düşürücü süreye tabi olduğu, suç tarihi itibarıyla söz konusu sürenin dolmuş olduğu gerekçesiyle kovuşturmaya yer olmadığına karar verilmiş ise de;\n\n5237 sayılı Türk Ceza Kanunu’nun 73/1-2. maddesinde yer alan:\n“(1) Soruşturulması ve kovuşturulması şikâyete bağlı olan suç hakkında yetkili kimse altı ay içinde şikâyette bulunmadığı takdirde soruşturma ve kovuşturma yapılamaz. (2) Zamanaşımı süresini geçmemek koşuluyla bu süre, şikâyet hakkı olan kişinin fiili ve failin kim olduğunu bildiği veya öğrendiği günden başlar.”\nşeklindeki düzenleme dikkate alındığında, şikâyet tarihinin müştekinin fiil ve faili öğrendiği tarihten itibaren başlatılması gerektiği, söz konusu suçun zamanaşımı süresi dolmadığı sürece fiil ve faili öğrenme tarihinden itibaren 6 ay içinde şikâyet edilebileceği anlaşılmaktadır.\n\nMüşteki vekilinin, gerek 16/11/2017 tarihli dilekçesi ile gerekse yol yapım şirketinin kusurlu olduğunu belirten Adli Tıp Kurumu Ankara Trafik İhtisas Dairesi Başkanlığının 30/10/2018 tarihli raporu üzerine sunduğu 06/02/2020 tarihli dilekçesinde yol yapım şirketi yetkililerinden şikâyetçi olduğu dikkate alındığında, şikâyetin süresinde yapıldığı nazara alınmadan itirazın bu yönden kabul edilmesi gerekirken yazılı şekilde reddine karar verilmesinde isabet görülmediğinden bahisle, 5271 sayılı Ceza Muhakemesi Kanunu’nun 309. maddesi uyarınca anılan kararın bozulması lüzumu, Adalet Bakanlığının 22/09/2020 gün ve 94660652-105-03-11607-2020-Kyb sayılı kanun yararına bozma talebine atfen, Yargıtay Cumhuriyet Başsavcılığının 02/10/2020 gün ve 85992 sayılı ihbarnamesi ile daireye ihbar ve dava evrakı tevdi kılınmakla; dosya incelenerek gereği düşünüldü:\n\nMüşteki ... idaresindeki çekici ile 25/10/2017 tarihinde saat 17:15 sıralarında meskûn mahal dışında, sağ şeritte seyir hâlindeyken, aynı yönde seyir hâlinde bulunan şüpheli ... idaresindeki kamyonun, yolun sol tarafında bulunan yol yapım işini üstlenen firmanın bulunduğu şantiyeye dönmek için arka trafiği kontrol etmeden manevra yaptığı sırada, müştekinin şüpheli idaresindeki kamyonun sol orta yan tarafına çarptığı ve müştekinin basit tıbbi müdahale ile giderilebilir şekilde yaralandığı olayda; asli kusurlu olan şüpheli ... hakkında, taksirle yaralama suçundan açılan davanın yargılaması sırasında, Adli Tıp Kurumu Ankara Trafik İhtisas Dairesi Başkanlığından alınan 30/10/2018 tarihli kusur raporunda özetle:\n\n“Yol yapım çalışması yapılan bu yerde, yol çalışması nedeniyle şantiye kamyonlarının geçmesi için orta refüjdeki şev alanının asfalt ile doldurularak gayri nizami şekilde oluşturulan orta refüj boşluğunu (geçit), inşaat bitiminde kapatmayıp eski hâline getirmeyen, üstelik kavşak yaklaşımında ve kavşakta yeterince trafik işaret ve levhası koymayıp trafik seyir ve güvenliğini bozacak tarzda açık bırakan kurum veya kuruluş tali kusurludur.”\n\nşeklindeki görüşü üzerine, müşteki vekili tarafından 07/02/2019 tarihli dilekçe ile ... Cumhuriyet Başsavcılığına, yol yapım ve onarımdan sorumlu kişi, kişiler ve kuruluş hakkında suç duyurusunda bulunulduğu, tüm dosya kapsamından anlaşılmaktadır.\n\nBu durumda; müşteki vekilinin şikâyetinin faili öğrenmesinden itibaren 6 aylık şikâyet süresi içinde yapıldığı anlaşıldığından, kovuşturmaya yer olmadığına dair karara karşı yapılan itirazın kabulüne karar verilmesi gerekirken yazılı şekilde reddine karar verilmesinde isabet görülmediğinden;\n\nKanun yararına bozma talebine dayanılarak düzenlenen ihbarnamedeki bozma isteği, incelenen dosya kapsamına göre yerinde görüldüğünden; ... Cumhuriyet Başsavcılığınca verilen 15/01/2020 tarihli ve 2019/191 soruşturma, 2020/109 sayılı kovuşturmaya yer olmadığına dair karara karşı yapılan itirazın reddine ilişkin Bolvadin Sulh Ceza Hâkimliğinin 12/02/2020 tarihli ve 2020/149 değişik iş sayılı kararının, 5271 sayılı Ceza Muhakemesi Kanunu’nun 309. maddesi uyarınca isteme uygun olarak BOZULMASINA, müteakip işlemlerin mahallinde yapılmasına, dosyanın gereği için Yargıtay Cumhuriyet Başsavcılığına TEVDİİNE, 21/01/2021 tarihinde oybirliğiyle karar verildi.",
+	"category": "criminal",
+	"keywords": [],
+	"importance_level": "medium",
+	"is_published": true,
+	"published_at": {
+		"$date": "2025-09-08T14:05:59.466Z"
+	}
+}]
+

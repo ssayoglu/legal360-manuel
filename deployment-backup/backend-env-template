@@ -1,0 +1,5 @@
+MONGO_URL=mongodb://localhost:27017
+DB_NAME=legal360
+JWT_SECRET=your-secret-key-legal-design-turkey-2025
+PORT=8001
+CORS_ORIGINS=*

@@ -1,0 +1,320 @@
+import React, { useState } from 'react';
+import { useNavigate, useLocation, Outlet } from 'react-router-dom';
+import { Button } from '../ui/button';
+import { 
+  Scale, 
+  Menu, 
+  X, 
+  Home, 
+  FileText, 
+  Calculator, 
+  BookOpen, 
+  Gavel, 
+  MessageCircle, 
+  Settings,
+  LogOut,
+  Users,
+  HelpCircle,
+  MapPin,
+  ChevronDown,
+  ChevronRight,
+  Server
+} from 'lucide-react';
+
+const AdminLayout = ({ adminUser, onLogout }) => {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [dropdownStates, setDropdownStates] = useState({});
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const navigation = [
+    {
+      name: 'Dashboard',
+      href: '/admin/dashboard',
+      icon: Home,
+      current: location.pathname === '/admin/dashboard'
+    },
+    {
+      name: 'Hukuki Süreçler',
+      href: '/admin/legal-processes',
+      icon: FileText,
+      current: location.pathname.startsWith('/admin/legal-processes')
+    },
+    {
+      name: 'Hesaplayıcı Parametreleri',
+      href: '/admin/calculator-parameters',
+      icon: Calculator,
+      current: location.pathname.startsWith('/admin/calculator-parameters')
+    },
+    {
+      name: 'Blog Yazıları',
+      href: '/admin/blog-posts',
+      icon: BookOpen,
+      current: location.pathname.startsWith('/admin/blog-posts')
+    },
+    {
+      name: 'Yargıtay Kararları',
+      href: '/admin/supreme-court-decisions',
+      icon: Gavel,
+      current: location.pathname.startsWith('/admin/supreme-court-decisions')
+    },
+    {
+      name: 'İçerik Sayfaları',
+      href: '/admin/content-pages',
+      icon: MessageCircle,
+      current: location.pathname.startsWith('/admin/content-pages')
+    },
+    {
+    },    {      name: Sistem Durumu,      href: /admin/system-status,      icon: Server,      current: location.pathname === /admin/system-status    },
+    },
+    {
+      name: 'Sayfa İçerikleri',
+      href: '/admin/page-contents',
+      icon: FileText,
+      current: location.pathname.startsWith('/admin/page-contents') || location.pathname.startsWith('/admin/about-content') || location.pathname.startsWith('/admin/contact-content') || location.pathname.startsWith('/admin/home-content'),
+      submenu: [
+        { name: 'Hakkımızda Sayfası', href: '/admin/about-content' },
+        { name: 'İletişim Sayfası', href: '/admin/contact-content' },
+        { name: 'Ana Sayfa İçeriği', href: '/admin/home-content' }
+      ]
+    },
+    {
+      name: 'Adli Yardım',
+      href: '/admin/legal-aid',
+      icon: HelpCircle,
+      current: location.pathname.startsWith('/admin/legal-aid')
+    },
+    {
+      name: 'Baro Yönetimi',
+      href: '/admin/baro-management',
+      icon: MapPin,
+      current: location.pathname.startsWith('/admin/baro-management')
+    },
+    {
+      name: 'Reklam Ayarları',
+      href: '/admin/ads-settings',
+      icon: Settings,
+      current: location.pathname.startsWith('/admin/ads-settings')
+    }
+  ];
+
+  const handleLogout = () => {
+    localStorage.removeItem('admin_token');
+    localStorage.removeItem('admin_user');
+    onLogout();
+    navigate('/admin/login');
+  };
+
+  const handleNavigate = (href) => {
+    navigate(href);
+    setSidebarOpen(false);
+  };
+
+  const toggleDropdown = (itemName) => {
+    setDropdownStates(prev => ({
+      ...prev,
+      [itemName]: !prev[itemName]
+    }));
+  };
+
+  return (
+    <div className="h-screen flex overflow-hidden bg-gray-100">
+      {/* Mobile sidebar */}
+      <div className={`fixed inset-0 flex z-40 md:hidden ${sidebarOpen ? '' : 'hidden'}`}>
+        <div className="fixed inset-0 bg-gray-600 bg-opacity-75" onClick={() => setSidebarOpen(false)} />
+        
+        <div className="relative flex-1 flex flex-col max-w-xs w-full bg-white">
+          <div className="absolute top-0 right-0 -mr-12 pt-2">
+            <button
+              type="button"
+              className="ml-1 flex items-center justify-center h-10 w-10 rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              onClick={() => setSidebarOpen(false)}
+            >
+              <X className="h-6 w-6 text-white" />
+            </button>
+          </div>
+          
+          <div className="flex-1 h-0 pt-5 pb-4 overflow-y-auto">
+            <div className="flex-shrink-0 flex items-center px-4">
+              <div className="p-2 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl shadow-lg">
+                <Scale className="h-6 w-6 text-white" />
+              </div>
+              <span className="ml-3 text-lg font-semibold text-gray-900">Admin Panel</span>
+            </div>
+            <nav className="mt-5 px-2 space-y-1">
+              {navigation.map((item) => (
+                <div key={item.name}>
+                  {/* Main menu item */}
+                  <button
+                    onClick={() => item.submenu ? toggleDropdown(item.name) : handleNavigate(item.href)}
+                    className={`w-full text-left group flex items-center justify-between px-2 py-2 text-base font-medium rounded-md ${
+                      item.current
+                        ? 'bg-blue-100 text-blue-900'
+                        : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
+                    }`}
+                  >
+                    <div className="flex items-center">
+                      <item.icon className="mr-4 h-6 w-6" />
+                      {item.name}
+                    </div>
+                    {item.submenu && (
+                      dropdownStates[item.name] ? (
+                        <ChevronDown className="h-4 w-4" />
+                      ) : (
+                        <ChevronRight className="h-4 w-4" />
+                      )
+                    )}
+                  </button>
+                  
+                  {/* Submenu items */}
+                  {item.submenu && dropdownStates[item.name] && (
+                    <div className="ml-8 mt-1 space-y-1">
+                      {item.submenu.map((subItem) => (
+                        <button
+                          key={subItem.name}
+                          onClick={() => handleNavigate(subItem.href)}
+                          className={`w-full text-left block px-2 py-2 text-sm rounded-md ${
+                            location.pathname === subItem.href
+                              ? 'bg-blue-50 text-blue-700 font-medium'
+                              : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
+                          }`}
+                        >
+                          {subItem.name}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </nav>
+          </div>
+          
+          <div className="flex-shrink-0 flex border-t border-gray-200 p-4">
+            <div className="flex-shrink-0 w-full group block">
+              <div className="flex items-center">
+                <div className="ml-3">
+                  <p className="text-base font-medium text-gray-700">{adminUser?.username}</p>
+                  <p className="text-sm font-medium text-gray-500">Admin</p>
+                </div>
+              </div>
+              <Button
+                onClick={handleLogout}
+                variant="outline"
+                className="w-full mt-3 text-red-600 border-red-300 hover:bg-red-50"
+              >
+                <LogOut className="h-4 w-4 mr-2" />
+                Çıkış Yap
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Desktop sidebar */}
+      <div className="hidden md:flex md:flex-shrink-0">
+        <div className="flex flex-col w-64">
+          <div className="flex flex-col h-0 flex-1 border-r border-gray-200 bg-white">
+            <div className="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
+              <div className="flex items-center flex-shrink-0 px-4">
+                <div className="p-2 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl shadow-lg">
+                  <Scale className="h-6 w-6 text-white" />
+                </div>
+                <span className="ml-3 text-lg font-semibold text-gray-900">Admin Panel</span>
+              </div>
+              <nav className="mt-5 flex-1 px-2 space-y-1">
+                {navigation.map((item) => (
+                  <div key={item.name}>
+                    {/* Main menu item */}
+                    <button
+                      onClick={() => item.submenu ? toggleDropdown(item.name) : handleNavigate(item.href)}
+                      className={`w-full text-left group flex items-center justify-between px-2 py-2 text-sm font-medium rounded-md ${
+                        item.current
+                          ? 'bg-blue-100 text-blue-900'
+                          : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
+                      }`}
+                    >
+                      <div className="flex items-center">
+                        <item.icon className="mr-3 h-5 w-5" />
+                        {item.name}
+                      </div>
+                      {item.submenu && (
+                        dropdownStates[item.name] ? (
+                          <ChevronDown className="h-4 w-4" />
+                        ) : (
+                          <ChevronRight className="h-4 w-4" />
+                        )
+                      )}
+                    </button>
+                    
+                    {/* Submenu items */}
+                    {item.submenu && dropdownStates[item.name] && (
+                      <div className="ml-6 mt-1 space-y-1">
+                        {item.submenu.map((subItem) => (
+                          <button
+                            key={subItem.name}
+                            onClick={() => handleNavigate(subItem.href)}
+                            className={`w-full text-left block px-2 py-2 text-sm rounded-md ${
+                              location.pathname === subItem.href
+                                ? 'bg-blue-50 text-blue-700 font-medium'
+                                : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
+                            }`}
+                          >
+                            {subItem.name}
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </nav>
+            </div>
+            
+            <div className="flex-shrink-0 flex border-t border-gray-200 p-4">
+              <div className="flex-shrink-0 w-full group block">
+                <div className="flex items-center">
+                  <div className="ml-3">
+                    <p className="text-sm font-medium text-gray-700">{adminUser?.username}</p>
+                    <p className="text-xs font-medium text-gray-500">Admin</p>
+                  </div>
+                </div>
+                <Button
+                  onClick={handleLogout}
+                  variant="outline"
+                  size="sm"
+                  className="w-full mt-3 text-red-600 border-red-300 hover:bg-red-50"
+                >
+                  <LogOut className="h-4 w-4 mr-2" />
+                  Çıkış Yap
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Main content */}
+      <div className="flex flex-col w-0 flex-1 overflow-hidden">
+        {/* Top bar */}
+        <div className="md:hidden pl-1 pt-1 sm:pl-3 sm:pt-3">
+          <button
+            type="button"
+            className="-ml-0.5 -mt-0.5 h-12 w-12 inline-flex items-center justify-center rounded-md text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+            onClick={() => setSidebarOpen(true)}
+          >
+            <Menu className="h-6 w-6" />
+          </button>
+        </div>
+
+        <main className="flex-1 relative z-0 overflow-y-auto focus:outline-none">
+          <div className="py-6">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+              <Outlet />
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  );
+};
+
+export default AdminLayout;

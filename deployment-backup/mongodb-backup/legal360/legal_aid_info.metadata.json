@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"889ef2b27df4484fafa57aad05c3f046","collectionName":"legal_aid_info","type":"collection"}
